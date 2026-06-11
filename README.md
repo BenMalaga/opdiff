@@ -7,7 +7,7 @@
 Operator-facing upgrade notes derived from the code itself: diff the deployment
 surface (env vars, ports, migrations, base images) between two git refs.
 
-[![release](https://img.shields.io/github/v/release/BenMalaga/opdiff)](https://github.com/BenMalaga/opdiff/releases)
+[![npm](https://img.shields.io/npm/v/opdiff-cli?color=cb3837&label=npm)](https://www.npmjs.com/package/opdiff-cli)
 [![CI](https://github.com/BenMalaga/opdiff/actions/workflows/test.yml/badge.svg)](https://github.com/BenMalaga/opdiff/actions/workflows/test.yml)
 [![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](package.json)
 [![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](package.json)
