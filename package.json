@@ -1,0 +1,40 @@
+{
+  "name": "opdiff",
+  "version": "0.1.0",
+  "description": "Operator-facing upgrade notes derived from the code itself. Diff the deployment surface (env vars, ports, migrations, base images) between two git refs.",
+  "keywords": [
+    "devops",
+    "self-hosted",
+    "cli",
+    "upgrade",
+    "env",
+    "environment-variables",
+    "docker",
+    "release-notes",
+    "git",
+    "migrations",
+    "operators"
+  ],
+  "license": "MIT",
+  "author": "Ben Malaga",
+  "type": "module",
+  "bin": {
+    "opdiff": "bin/opdiff.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenMalaga/opdiff.git"
+  },
+  "bugs": "https://github.com/BenMalaga/opdiff/issues",
+  "homepage": "https://github.com/BenMalaga/opdiff#readme",
+  "scripts": {
+    "test": "node --test"
+  }
+}
