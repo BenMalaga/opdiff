@@ -1,5 +1,5 @@
 {
-  "name": "opdiff",
+  "name": "opdiff-cli",
   "version": "0.1.0",
   "description": "Operator-facing upgrade notes derived from the code itself. Diff the deployment surface (env vars, ports, migrations, base images) between two git refs.",
   "keywords": [

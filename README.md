@@ -76,7 +76,7 @@ None of this is in a human-written summary anywhere; it came out of the diff.
 No install needed:
 
 ```console
-npx opdiff v1.4.0..v2.0.0
+npx opdiff-cli v1.4.0..v2.0.0
 ```
 
 Or globally:
@@ -161,7 +161,7 @@ workflow and ship an "Upgrade notes for operators" section nobody had to write:
     PREV=$(git describe --tags --abbrev=0 "${{ github.ref_name }}^")
     echo '## Upgrade notes for operators' >> notes.md
     echo '```' >> notes.md
-    npx opdiff "$PREV..${{ github.ref_name }}" --no-color >> notes.md
+    npx opdiff-cli "$PREV..${{ github.ref_name }}" --no-color >> notes.md
     echo '```' >> notes.md
     gh release edit "${{ github.ref_name }}" --notes-file notes.md
 ```
@@ -187,6 +187,10 @@ output must stay reproducible byte for byte.
 The extractors are pure functions over source strings, which makes adding a
 language or detector a small, well-tested change. See
 [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Why is the npm package opdiff-cli?
+
+npm's name-similarity filter rejected "opdiff" as too close to "diff". The command you get is still `opdiff`, and a global install (`npm install -g opdiff-cli`) gives you the bare `opdiff` command.
 
 ## License
 
